@@ -1,0 +1,27 @@
+# 系统文件
+.DS_Store
+
+# IDE/编辑器相关
+.vscode/
+.idea/
+*.swp
+
+# Python 编译生成的文件
+__pycache__/
+*.pyc
+
+# 特定项目文件夹
+results/
+fashion-mnist/
+
+# 日志和数据文件
+*.log
+*.csv
+*.json
+
+# 虚拟环境
+venv/
+.env
+
+# 特定文件忽略
+config.yml
