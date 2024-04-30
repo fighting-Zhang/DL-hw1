@@ -14,7 +14,7 @@ def visualize_all_layers_weights(model, results_dir=None):
         input_features = W.shape[1]
         
         # 确定子图的尺寸
-        num_cols = min(10, num_neurons)  # 最多每行显示10个神经元的权重
+        num_cols = min(20, num_neurons)  # 最多每行显示20个神经元的权重
         num_rows = (num_neurons + num_cols - 1) // num_cols
         
         fig, axes = plt.subplots(num_rows, num_cols, figsize=(num_cols * 1.5, num_rows * 1.5))
@@ -42,7 +42,7 @@ def visualize_all_layers_weights(model, results_dir=None):
 
 if __name__ == '__main__':
     # Load the model
-    results_dir = 't_results'
+    results_dir = 'results_lr_0.1_drop_0.7_hidden_512_l2_0.0'
 
     with open(os.path.join(results_dir, 'hyperparams.json'), 'r') as f:
         hyperparams = json.load(f)

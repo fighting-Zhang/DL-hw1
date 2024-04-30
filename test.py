@@ -24,7 +24,7 @@ def evaluate(model, X_test, Y_test):
     return accuracy
 
 def main():
-    result_dir = 't5_results'
+    result_dir = 'results_lr_0.1_drop_0.7_hidden_512_l2_0.0'
     hyperparams = load_hyperparameters(os.path.join(result_dir, 'hyperparams.json'))
     print("Loaded Hyperparameters:", hyperparams)
 

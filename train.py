@@ -72,11 +72,11 @@ def main():
     X_train, Y_train = preprocess_data(X_train, Y_train)
     X_val, Y_val = preprocess_data(X_val, Y_val) # (num_features, num_samples)
     
-    results_dir = 't5_results'
+    results_dir = 'results'
     os.makedirs(results_dir, exist_ok=True)
     
     hyperparams = {
-        'hidden_size': 256, #512,  # 输入层784个神经元，隐藏层128个神经元，输出层10个神经元
+        'hidden_size': 512,  # 输入层784个神经元，隐藏层512个神经元，输出层10个神经元
         'activation': 'relu',
         'initial_lr': 0.1, #0.01,
         'batch_size': 64,
@@ -85,7 +85,7 @@ def main():
         'epochs': 100,
         'decay_rate': 0.95,
         'epochs_drop': 10,
-        'drop': 0.8, #0.7,
+        'drop': 0.7,
         'milestones': [30, 60]
     }
 

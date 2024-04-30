@@ -13,6 +13,7 @@ __pycache__/
 # 特定项目文件夹
 results/
 fashion-mnist/
+results_lr_0.1_drop_0.7_hidden_512_l2_0.0/
 
 # 日志和数据文件
 *.log
